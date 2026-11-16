@@ -16,30 +16,18 @@ Maurice Denzel- Part 1, 3:
 
 - **Our colours:** Light theme: `#2457A6` and `#174078`. Dark theme: `#65D6C5` and `#45B7A7`. We selected these colours to give our website a distinctive appearance while maintaining good text contrast.
 - **Projects we added:** Team Website Repository and Android App Analysis, under the Git category. 
-- **Extension challenge(s) completed:** E1 – Added a fourth page (`faq.html`) containing four frequently asked questions using HTML `<details>` and `<summary>` elements. Added the FAQ navigation link to all pages and set `aria-current="page"` correctly on the FAQ page.
+- **Extension challenge(s) completed:** E1 – Added a fourth page (`faq.html`) containing four frequently asked questions using HTML `<details>` and `<summary>` elements. Added the FAQ navigation link to all pages and set `aria-current="page"` correctly on the FAQ page.Also added photos using the `<img>` tag
 
 ## Reflection
 
-1. What would you lose by using a clickable <div> instead of a <button>?
+1. We learned how to build a website from scratch using HTML, and how to use semantic elements to give our pages real meaning and structure.
 
-A <div> lacks built-in keyboard support and button semantics. Keyboard and screen-reader users would be affected.
+2. We got better at CSS by designing layouts that work on different screen sizes, picking colours that fit together, and adding both light and dark themes.
 
-2. What would happen if you removed defer from the script?
+3. We learned how JavaScript brings a website to life — things like the navigation toggle, filtering projects, and checking form inputs before submission.
 
-The browser could execute JavaScript before the HTML finishes loading, causing elements not to be found.
+4. We came to understand why accessibility matters, from using proper buttons and labels to adding alt text and making sure everything works with just a keyboard.
 
-3. Why use textContent instead of innerHTML?
+5. We learned how important teamwork is — splitting up tasks, helping each other solve problems, and testing the site together before handing it in.
 
-innerHTML could allow malicious scripts to run, causing XSS attacks. textContent displays input as plain text.
-
-4. Why does the server still need to validate form data?
-
-JavaScript validation can be bypassed or disabled. The server must independently check submitted data.
-
-5. Why doesn't the theme preference transfer from file:// to Live Server?
-
-They have different origins, and localStorage is separated by origin.
-
-6. What is duplicated across your HTML pages, and why is that a problem?
-
-The navigation bar and footer are duplicated. Updating them requires changing every page, which can cause inconsistencies.
+6. We got hands-on experience with Git and GitHub, using them to share our code, keep track of changes, and work together as a team.
