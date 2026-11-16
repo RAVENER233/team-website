@@ -20,26 +20,26 @@ Maurice Denzel- Part 1, 3:
 
 ## Reflection
 
-**1. The menu toggle is a `<button>`, not a clickable `<div>`. Name two things you would lose with a `<div>`, and who would be affected.**
+1. What would you lose by using a clickable <div> instead of a <button>?
 
-A `<div>` does not automatically support keyboard interaction or provide button semantics to assistive technologies. Keyboard users and people using screen readers would be affected because they might struggle to identify and operate the menu toggle.
+A <div> lacks built-in keyboard support and button semantics. Keyboard and screen-reader users would be affected.
 
-**2. What would break if you removed `defer` from the `<script>` tag in `<head>`?**
+2. What would happen if you removed defer from the script?
 
-Without `defer`, the browser would stop parsing the HTML while it downloads and executes the JavaScript file. The script might try to access HTML elements before they have been created, causing errors because those elements would not yet be available.
+The browser could execute JavaScript before the HTML finishes loading, causing elements not to be found.
 
-**3. `renderProjects` uses `textContent` rather than `innerHTML`. What could go wrong with `innerHTML` if project titles were typed in by visitors?**
+3. Why use textContent instead of innerHTML?
 
-Using `innerHTML` with visitor-provided titles could allow malicious HTML or JavaScript to be inserted into the page. This could lead to cross-site scripting (XSS), potentially allowing attackers to execute harmful scripts in another visitor's browser. `textContent` treats the input as ordinary text instead.
+innerHTML could allow malicious scripts to run, causing XSS attacks. textContent displays input as plain text.
 
-**4. Your form checks its input with JavaScript. Why will the server still need to validate the same data once the form is connected to one?**
+4. Why does the server still need to validate form data?
 
-JavaScript validation runs in the visitor's browser and can be disabled or bypassed. Server-side validation is necessary to ensure submitted information is safe, complete and correct before it is processed or stored.
+JavaScript validation can be bypassed or disabled. The server must independently check submitted data.
 
-**5. Your theme choice follows you from Home to Contact, but not from a double-clicked file to Live Server. Explain this using the idea of an origin.**
+5. Why doesn't the theme preference transfer from file:// to Live Server?
 
-The browser stores our theme preference in `localStorage`, which is separated by origin. Home and Contact share the same origin when opened through Live Server, but a double-clicked file uses the `file://` origin, which is different from the Live Server address. Therefore, the saved theme preference is not shared between them.
+They have different origins, and localStorage is separated by origin.
 
-**6. Name something duplicated across your HTML pages. What problem does that duplication cause, and how might it be avoided?**
+6. What is duplicated across your HTML pages, and why is that a problem?
 
-The navigation bar and footer are duplicated across our HTML pages. This can make maintenance difficult because changing the navigation or footer requires updating every page, and forgetting one can make the website inconsistent.
+The navigation bar and footer are duplicated. Updating them requires changing every page, which can cause inconsistencies.
