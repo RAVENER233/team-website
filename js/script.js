@@ -54,10 +54,17 @@ const projects = [
   { title: 'Tip calculator', category: 'js', description: 'Reads two inputs and updates the total as you type.' },
   { title: 'Accessible contact form', category: 'html', description: 'Labelled fields, helpful errors and keyboard-friendly controls.' },
   { title: 'Dark mode toggle', category: 'js', description: 'Switches the colour theme and remembers the choice.' },
-  { title: 'Flexbox navigation bar', category: 'css', description: 'A header that collapses into a menu button on small screens.' }
+  { title: 'Flexbox navigation bar', category: 'css', description: 'A header that collapses into a menu button on small screens.' },
+  { title: 'Team Website Repository', category: 'git', description: 'A shared GitHub repository for collaborating on our CSC 216 website.' },
+  { title: 'Android App Analysis', category: 'git', description: 'A learning project exploring Android application structure and APK contents.' }
 ];
 
-const categoryNames = { html: 'HTML', css: 'CSS', js: 'JavaScript' };
+const categoryNames = {
+  html: 'HTML',
+  css: 'CSS',
+  js: 'JavaScript',
+  git: 'Git'
+};
 
 const projectList = document.querySelector('#project-list');
 const projectCount = document.querySelector('#project-count');

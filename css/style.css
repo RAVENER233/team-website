@@ -9,8 +9,8 @@
   --color-surface: #ffffff;
   --color-text: #1c2430;
   --color-muted: #5a6474;
-  --color-primary: #0f6e6e;
-  --color-primary-dark: #0a5050;
+  --color-primary: #2457A6;
+  --color-primary-dark: #174078;
   --color-on-primary: #ffffff;
   --color-border: #dde1e6;
   --color-error: #b3261e;
@@ -34,8 +34,8 @@ body.dark {
   --color-surface: #1a212b;
   --color-text: #e7ebf0;
   --color-muted: #a2abb9;
-  --color-primary: #4fc1c1;
-  --color-primary-dark: #83d8d8;
+  --color-primary: #65D6C5;
+  --color-primary-dark: #45B7A7;
   --color-on-primary: #0b1f1f;
   --color-border: #2b3340;
   --color-error: #ff8a80;
@@ -90,6 +90,7 @@ img {
   outline: 3px solid var(--color-primary);
   outline-offset: 3px;
 }
+
 
 /* ---------- 3. Layout helpers ---------- */
 .container {
@@ -430,3 +431,20 @@ textarea[aria-invalid="true"] {
 }
 
 
+/* Team profile pictures */
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
+  border: 3px solid var(--color-primary);
+  
+  
+}
+
+.card img:hover{
+  scale: 1.5;
+  transition: ease-in-out 0.3s;
+}
